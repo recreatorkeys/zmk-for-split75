@@ -62,7 +62,6 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
     };
-};
 
     vbatt: vbatt {
         compatible = "zmk,battery-voltage-divider";
@@ -70,9 +69,6 @@
         output-ohms = <100000>;
         full-ohms = <(100000 + 100000)>;
     };
-
-
-
 };
 
 &adc {
