@@ -21,10 +21,6 @@ if BOARD_SPLIT75_LEFT || BOARD_SPLIT75_RIGHT
     config ZMK_SPLIT
         default y
 
-    config SPI
-        bool
-        default y
-
     config BT_CTLR
     	default BT
     
