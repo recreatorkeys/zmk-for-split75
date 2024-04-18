@@ -42,4 +42,5 @@ if BOARD_SPLIT75_LEFT || BOARD_SPLIT75_RIGHT
 
     config ZMK_BATTERY_VOLTAGE_DIVIDER
     	default y
+
 endif
