@@ -21,10 +21,6 @@ if BOARD_SPLIT75_LEFT || BOARD_SPLIT75_RIGHT
     config ZMK_SPLIT
         default y
 
-    config SPI
-        bool
-        default y
-
     config BT_CTLR
     	default BT
     
@@ -33,7 +29,18 @@ if BOARD_SPLIT75_LEFT || BOARD_SPLIT75_RIGHT
     
     config ZMK_USB
     	default y
+
+    if USB
     
-    config SPI
+        config USB_NRFX
+        	default y
+        
+        config USB_DEVICE_STACK
+        	default y
+
+    endif # USB
+
+    config ZMK_BATTERY_VOLTAGE_DIVIDER
     	default y
+
 endif
