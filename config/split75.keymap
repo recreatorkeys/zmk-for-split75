@@ -12,10 +12,12 @@
 &kp F5         &kp TAB         &kp Q         &kp W         &kp E   &kp R      &kp T               &kp Y      &kp U   &kp I          &kp O          &kp P          &kp LBRC         &kp RBRC       &kp PIPE       &kp INSERT
 &kp PAGE_UP    &kp CAPSLOCK    &kp A         &kp S         &kp D   &kp F      &kp G               &kp H      &kp J   &kp K          &kp L          &kp SEMICOLON  &kp SQT          &kp ENTER      &kp PAGE_UP
 &kp PAGE_DOWN  &kp LEFT_SHIFT  &kp Z         &kp X         &kp C   &kp V      &kp B               &kp N      &kp M   &kp COMMA      &kp PERIOD     &kp SLASH      &kp RIGHT_SHIFT  &mo 1          &kp PAGE_DOWN
-&kp END        &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mo 2   &kp SPACE  &kp C_MUTE          &kp SPACE  &mo 3   &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RCTRL      &kp K_MENU       &kp DELETE     &trans
+&kp END        &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &mo 2   &kp SPACE  &kp C_MUTE          &kp SPACE  &mo 3   &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RCTRL      &kp K_MENU       &kp DELETE     &kp C_MUTE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
         layer_1 {
