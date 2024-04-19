@@ -50,7 +50,7 @@
         status = "okay";
     };
 
-    right_encoder: right_encoder {
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
         a-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
