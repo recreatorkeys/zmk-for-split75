@@ -7,12 +7,6 @@ if BOARD_SPLIT75_LEFT
     config ZMK_KEYBOARD_NAME
     default "split75"
 endif
-
-if BOARD_SPLIT75_RIGHT
-    config ZMK_KEYBOARD_NAME
-    default "split75_right"
-endif
-
 if BOARD_SPLIT75_LEFT || BOARD_SPLIT75_RIGHT
 
     config BOARD
