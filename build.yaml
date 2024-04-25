@@ -13,7 +13,6 @@
 #
 ---
 include:
-  - board: split75
-    shield: split75_left
-  - board: split75
-    shield: split75_right
+  - board: split75_left
+  - board: split75_right
+
