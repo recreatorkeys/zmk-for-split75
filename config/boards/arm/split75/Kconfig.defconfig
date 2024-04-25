@@ -7,7 +7,8 @@ if BOARD_SPLIT75_LEFT
 
     config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
+    config ZMK_SPLIT
+	default y
     config ZMK_KEYBOARD_NAME
     default "split75"
 
